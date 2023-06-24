@@ -1,6 +1,7 @@
 {
   "name": "softlex",
   "version": "0.1.0",
+  "homepage": "https://StAl15.github.io/softlex",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -10,13 +11,22 @@
     "@types/node": "^16.18.36",
     "@types/react": "^18.2.13",
     "@types/react-dom": "^18.2.6",
+    "async": "^3.2.4",
+    "axios": "^1.4.0",
+    "lodash": "^4.17.21",
+    "mobx": "^6.9.0",
+    "mobx-react-lite": "^3.4.3",
+    "moneyjs": "^0.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-query": "^3.39.3",
     "react-scripts": "5.0.1",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -39,5 +49,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0",
+    "tailwindcss": "^3.3.2"
   }
 }
