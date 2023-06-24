@@ -41,9 +41,9 @@ function Content() {
     }, []);
 
 
-    return isError
-        ? <p>Error</p>
-        : isLoading ? <p>Loading...</p>
+    return isLoading
+        ? <p>Loading...</p>
+        : isError ? <p>Error</p>
             : <div className={'w-screen h-screen inline-flex justify-center items-center bg-[#EAEFF3]'}>
                 <div className={'w-1/3 h-fit p-5 bg-white space-y-4 rounded'}>
                     <h3 className={'font-semibold text-2xl'}>Конвертер валют</h3>
