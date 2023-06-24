@@ -34,7 +34,6 @@ function Content() {
                     localStorage.setItem('selected', Object.keys(options).at(0)!)
                     setOptions(JSON.parse(localStorage['rates']));
                     setSelectedValute(localStorage['selected'])
-                    // saveKoef(options, setKoef, localStorage['selected'])
                     console.log(options, selectedValute, localStorage['selected'])
                 })
 
